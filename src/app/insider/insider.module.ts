@@ -5,14 +5,18 @@ import { InsiderRoutingModule } from './insider-routing.module';
 import { InsiderComponent } from './insider.component';
 import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
-import { EmployeesModule } from '../employees/employees.module';
+import { DashboardComponent } from '../dashboard/dashboard.component';
 
 @NgModule({
   imports: [
     CommonModule,
-    InsiderRoutingModule,
-    EmployeesModule
+    InsiderRoutingModule
   ],
-  declarations: [InsiderComponent, HeaderComponent, SidebarComponent]
+  declarations: [
+    InsiderComponent,
+    HeaderComponent, 
+    SidebarComponent,
+    DashboardComponent
+  ]
 })
 export class InsiderModule { }
